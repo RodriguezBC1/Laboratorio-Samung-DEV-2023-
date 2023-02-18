@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+        <section class="recuadro" 
+            <div class="createaccount">
+             <form action="formulario_registro" method="get">
+                <fieldset>
+                    <h1> Create Account</h1>
+                        <label for="nombre">Nombre</label>
+                        <span id="errorNombre" class="mensajeError"></span>
+                        <input type="text" id="nombre">
+                        <span id="errorNombre" class="mensajeError"></span>
+                        <br></br>
+                        <label for="email">Email</label>
+                        <span id="errorEmail" class="mensajeError"></span>
+                        <input type="email" id="email">
+                        <span id="errorEmail" class="mensajeError"></span>
+                        <br></br>
+                        <label for="clave">Clave</label>
+                        <span id="errorClave" class="mensajeError"></span>
+                        <input type="password"minlength="8" id="clave">
+                        <br></br>
+                        <label for="confirme_clave">Confirme su clave</label>       
+                        <Input type="password" minlength="8"  id="Confirme_clave"></Input> 
+                        <span id="errorClaveIncorrecta" class="mensajeError"></span>  
+                        <input type="submit" value="ENVIAR" id="botonEnviar"
+                            onclick="return validarNombre(), validarEmail(), validarClave(), validarClaveIgual(), validarFormulario()" />
+                        </fieldset>
+                </div>
+                     </form>
+            </section>  
+     </main>
+</body>
+                        
+</html>
